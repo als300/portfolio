@@ -1,0 +1,94 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #ddddff;
+}
+
+.container {
+	width: 500px;
+	min-width: 500px;
+	height: 90%;
+	min-height: 90%;
+	margin: 10px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.container header {
+	font-weight:bold;
+	padding: 8px;
+	border-bottom:1px solid #000000;
+}
+
+.container main {
+	flex: 1;
+	overflow-y: auto;
+}
+
+.container main .chat {
+	clear: left;
+	margin: 8px;
+	padding: 8px;
+
+
+}
+
+.container main .chat.friend {
+	float:left;
+}
+
+.container main .chat.me {
+	float:right;
+}
+
+.container main .chat .message {
+	padding: 7px;
+
+}
+
+.container main .chat.friend .message {
+	background-color:white;
+	display:inline;
+	border-radius:5px;
+
+}
+
+.container main .chat.me .message {
+	background-color:yellow;
+	display:inline;
+	border-radius:5px;
+
+}
+
+.container main .chat .time {
+	font-size: 11px;
+	margin:8px;
+	float:right;
+}
+
+.container main .chat.me .time {
+	float:left;
+}
+
+.container footer {
+	width:100%;
+	background-color:white;
+}
+
+.container footer #message {
+	width:80%;
+	padding:10px;
+	border:white;
+}
+
+.container footer .sendbutton {
+	
+	width:20%;
+	height:100%;
+	padding:10px;
+	float:right;
+	border:white;
+}
